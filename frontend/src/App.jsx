@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { useEffect } from 'react'
+import { SpeedInsights } from '@vercel/speed-insights/react'
 import Navigation from './components/Navigation'
 import Home from './pages/Home'
 import GameLibrary from './pages/GameLibrary'
@@ -45,6 +46,7 @@ function App() {
           </Routes>
         </main>
       </div>
+      <SpeedInsights />
     </BrowserRouter>
   )
 }
